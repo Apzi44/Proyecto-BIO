@@ -1,0 +1,4 @@
+Instalar las siguientes librerías:
+
+
+pip install pygad scikit-learn pandas matplotlib
