@@ -1,3 +1,7 @@
+#Beltran Saucedo Axel Alejandro
+#Higuera Pineda Angel Abraham
+
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -21,6 +25,7 @@ st.title("🧬 Detección de Parkinson con algoritmo genetico")
 st.markdown("""
 Esta aplicación utiliza **Algoritmos Genéticos** para encontrar la combinación óptima de biomarcadores de voz
 que permitan diagnosticar la enfermedad de Parkinson con la mayor precisión posible.
+\n\nBy: Beltran Saucedo Axel Alejandro, Higuera Pineda Angel Abraham
 """)
 
 # --- GESTIÓN DE DATOS ---
@@ -77,7 +82,7 @@ scaler = StandardScaler()
 X_scaled = pd.DataFrame(scaler.fit_transform(X), columns=X.columns)
 
 # --- CONFIGURACIÓN DEL ALGORITMO GENÉTICO (SIDEBAR) ---
-st.sidebar.header("-- Configuración Genética")
+st.sidebar.header("⚙️ Configuración Genética")
 # Sliders para ajustar la intensidad de la búsqueda evolutiva.
 num_generaciones = st.sidebar.slider("Generaciones", 10, 200, 50)
 poblacion = st.sidebar.slider("Tamaño de Población", 10, 100, 20)
